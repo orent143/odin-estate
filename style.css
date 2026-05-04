@@ -25,7 +25,8 @@ h2 {
     padding-bottom: 2%;
     padding-right: 10%;
     background-color: #1f2937;
-
+    position: sticky;
+    top: 0;
 }
 
 .header-title {
