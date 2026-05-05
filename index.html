@@ -1,85 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Odin</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odin Estate — Davao Property</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="header">
-        <div class="header-title">
-            <img src="https://www.theodinproject.com/mstile-310x310.png" width="30" height="30" alt="header-logo">
-            <h1>The Odin Estate</h1>
-        </div>
-        <div class="links">
-            <a href="link-one">Home</a>
-            <a href="link-two">Properties</a>
-            <a href="link-three">About</a>
-            <a href="link-four">Contact</a>
-        </div>
+
+<!-- ─── NAV ─────────────────────────────────── -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="logo-mark"><span>O</span></div>
+    <span class="nav-logo-text">Odin Estate</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">Buy</a></li>
+    <li><a href="#">Rent</a></li>
+    <li><a href="#">Sell</a></li>
+    <li><a href="#">Agents</a></li>
+    <li><a href="#">Insights</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="btn-ghost">Contact Agent</button>
+    <button class="btn-primary">List Your Property</button>
+  </div>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag">Davao City · Metro Davao · Davao del Sur</div>
+    <h1 class="hero-headline">Find Property<br>in <em>Davao</em></h1>
+    <p class="hero-sub">Residential, commercial, and investment properties<br>from verified listings across Mindanao.</p>
+
+    <div class="search-bar">
+      <div class="search-field">
+        <label>Location</label>
+        <input type="text" placeholder="Lanang, Matina, Bajada…" />
+      </div>
+      <div class="search-field">
+        <label>Property Type</label>
+        <select>
+          <option>All Types</option>
+          <option>House &amp; Lot</option>
+          <option>Condominium</option>
+          <option>Lot Only</option>
+          <option>Commercial</option>
+        </select>
+      </div>
+      <div class="search-field">
+        <label>Price Range</label>
+        <select>
+          <option>Any Price</option>
+          <option>Under ₱3M</option>
+          <option>₱3M – ₱8M</option>
+          <option>₱8M – ₱20M</option>
+          <option>₱20M+</option>
+        </select>
+      </div>
+      <div class="search-btn-wrap">
+        <button class="search-btn">Search</button>
+      </div>
     </div>
-    <div class="hero">
-        <div class="left-content">
-            <h1>Find Your Dream Home in PH</h1>
-            <h2>Discover beautiful homes, apartments, and investment properties in the best locations. Odin Estate
-                Realty helps you find the perfect place to live, invest, or grow your future.</h2>
-            <div class="hero-buttons">
-                <button type="browse">Browse Properties</button>
-                <button type="schedule">Schedule a Consultation</button>
-            </div>
-        </div>
-        <div class="right-content">
-            <img src="https://i.pinimg.com/control1/736x/3d/00/81/3d0081254077632ed2e18180ee0997da.jpg" alt="hero-image"
-                height="300" width="500" border-radius=10>
-        </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number">1,240+</div>
+        <div class="stat-label">Active Listings</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">38</div>
+        <div class="stat-label">Licensed Brokers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">₱2.4B</div>
+        <div class="stat-label">Transactions Closed</div>
+      </div>
     </div>
-    <div class="information">
-        <h1>Why Choose Odin Estate?</h1>
-        <div class="feature-cards">
-            <div class="card">
-                <div class="image-card">
-                    <img src="https://i.pinimg.com/control1/736x/3d/00/81/3d0081254077632ed2e18180ee0997da.jpg" alt="featured-image" width="150" height="150">
-                </div>
-                <div class="title">Our experienced real estate professionals guide you through every step of the buying process.</div>
-            </div>
-            <div class="card">
-                <div class="image-card">
-                    <img src="https://i.pinimg.com/control1/736x/3d/00/81/3d0081254077632ed2e18180ee0997da.jpg" alt="featured-image" width="150" height="150">
-                </div>
-                <div class="title">We offer properties in prime neighborhoods with excellent schools, business districts, and amenities.</div>
-            </div>
-            <div class="card">
-                <div class="image-card">
-                    <img src="https://i.pinimg.com/control1/736x/3d/00/81/3d0081254077632ed2e18180ee0997da.jpg" alt="featured-image" width="150" height="150">
-                </div>
-                <div class="title">From luxury villas to budget-friendly homes, we have properties that fit every lifestyle.</div>
-            </div>
-            <div class="card">
-                <div class="image-card">
-                    <img src="https://i.pinimg.com/control1/736x/3d/00/81/3d0081254077632ed2e18180ee0997da.jpg" alt="featured-image" width="150" height="150" >
-                </div>
-                <div class="title">We help you find properties with strong long-term value and investment potential.</div>
-            </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80" alt="Davao property" />
+    <div class="hero-badge">
+      <div>
+        <div class="badge-num">4.9</div>
+      </div>
+      <div class="badge-text">Rated by<br>clients in 2025</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FEATURED LISTINGS ─────────────────────── -->
+<section class="listings-section">
+  <div class="section-header">
+    <div>
+      <div class="section-tag">Featured Listings</div>
+      <h2 class="section-title">Properties for Sale &amp; Rent</h2>
+    </div>
+    <a href="#" class="section-link">View all listings →</a>
+  </div>
+
+  <div class="listings-filter">
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">For Sale</button>
+    <button class="filter-btn">For Rent</button>
+    <button class="filter-btn">New</button>
+  </div>
+
+  <div class="listings-grid">
+
+    <!-- Card 1 -->
+    <div class="listing-card">
+      <div class="listing-img">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80" alt="Property" />
+        <div class="listing-badge">For Sale</div>
+      </div>
+      <div class="listing-body">
+        <div class="listing-price">₱12,500,000</div>
+        <div class="listing-name">Modern Single-Detached House</div>
+        <div class="listing-loc">Lanang, Davao City</div>
+        <div class="listing-specs">
+          <div class="spec"><strong>4</strong>Beds</div>
+          <div class="spec"><strong>3</strong>Baths</div>
+          <div class="spec"><strong>240</strong>sqm</div>
         </div>
+      </div>
     </div>
-    <div class="qoute">
-        <em>"PrimeNest Realty made buying our first home simple and stress-free. Their team helped us find the perfect property within our budget."</em>
-        <h5>— Michael and Sarah L., Happy Homeowners</h5>
-    </div>
-    <div class="call">
-        <div class="call-card">
-            <div class="text-section">
-                <h2>Ready to Find Your New Home?</h2>
-                <p>Browse our available listings or contact one of our agents today to schedule a property viewing.</p>
-            </div>
-            <button type="explore" class="explore-button">Explore Listings</button>
+
+    <!-- Card 2 -->
+    <div class="listing-card">
+      <div class="listing-img">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" alt="Property" />
+        <div class="listing-badge">For Sale</div>
+      </div>
+      <div class="listing-body">
+        <div class="listing-price">₱6,800,000</div>
+        <div class="listing-name">Townhouse with Carport</div>
+        <div class="listing-loc">Matina, Davao City</div>
+        <div class="listing-specs">
+          <div class="spec"><strong>3</strong>Beds</div>
+          <div class="spec"><strong>2</strong>Baths</div>
+          <div class="spec"><strong>150</strong>sqm</div>
         </div>
+      </div>
     </div>
-    <footer>© 2026 @orent143. All rights reserved.</footer>
+
+    <!-- Card 3 -->
+    <div class="listing-card">
+      <div class="listing-img">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Property" />
+        <div class="listing-badge">For Rent</div>
+      </div>
+      <div class="listing-body">
+        <div class="listing-price">₱38,000 / mo</div>
+        <div class="listing-name">Executive 2BR Condominium</div>
+        <div class="listing-loc">Bajada, Davao City</div>
+        <div class="listing-specs">
+          <div class="spec"><strong>2</strong>Beds</div>
+          <div class="spec"><strong>2</strong>Baths</div>
+          <div class="spec"><strong>78</strong>sqm</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="listing-card">
+      <div class="listing-img">
+        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80" alt="Property" />
+        <div class="listing-badge">New</div>
+      </div>
+      <div class="listing-body">
+        <div class="listing-price">₱4,200,000</div>
+        <div class="listing-name">Corner Lot Rowhouse</div>
+        <div class="listing-loc">Buhangin, Davao City</div>
+        <div class="listing-specs">
+          <div class="spec"><strong>3</strong>Beds</div>
+          <div class="spec"><strong>1</strong>Baths</div>
+          <div class="spec"><strong>108</strong>sqm</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="listing-card">
+      <div class="listing-img">
+        <img src="https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?w=600&q=80" alt="Property" />
+        <div class="listing-badge">For Sale</div>
+      </div>
+      <div class="listing-body">
+        <div class="listing-price">₱28,000,000</div>
+        <div class="listing-name">Luxury Hillside Villa</div>
+        <div class="listing-loc">Calinan, Davao City</div>
+        <div class="listing-specs">
+          <div class="spec"><strong>5</strong>Beds</div>
+          <div class="spec"><strong>4</strong>Baths</div>
+          <div class="spec"><strong>480</strong>sqm</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="listing-card">
+      <div class="listing-img">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80" alt="Property" />
+        <div class="listing-badge">For Rent</div>
+      </div>
+      <div class="listing-body">
+        <div class="listing-price">₱22,000 / mo</div>
+        <div class="listing-name">Studio Apartment Near Ateneo</div>
+        <div class="listing-loc">Jacinto, Davao City</div>
+        <div class="listing-specs">
+          <div class="spec"><strong>1</strong>Beds</div>
+          <div class="spec"><strong>1</strong>Baths</div>
+          <div class="spec"><strong>38</strong>sqm</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── NEIGHBORHOODS ──────────────────────────── -->
+<section class="neighborhoods">
+  <div class="section-header">
+    <div>
+      <div class="section-tag">Explore by Area</div>
+      <h2 class="section-title">Davao's Top Neighborhoods</h2>
+    </div>
+    <a href="#" class="section-link">See all areas →</a>
+  </div>
+
+  <div class="neighborhoods-grid">
+
+    <div class="neighborhood-card">
+      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=500&q=80" alt="Lanang" />
+      <div class="neighborhood-overlay">
+        <div class="neighborhood-name">Lanang</div>
+        <div class="neighborhood-desc">CBD, malls &amp; waterfront. High-demand commercial &amp; residential.</div>
+        <div class="neighborhood-price">Avg. ₱9.8M · 84 listings</div>
+      </div>
+    </div>
+
+    <div class="neighborhood-card">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Matina" />
+      <div class="neighborhood-overlay">
+        <div class="neighborhood-name">Matina</div>
+        <div class="neighborhood-desc">University belt. Mid-range housing popular with families.</div>
+        <div class="neighborhood-price">Avg. ₱5.2M · 130 listings</div>
+      </div>
+    </div>
+
+    <div class="neighborhood-card">
+      <img src="https://images.unsplash.com/photo-1464082354059-27db6ce50048?w=500&q=80" alt="Bajada" />
+      <div class="neighborhood-overlay">
+        <div class="neighborhood-name">Bajada</div>
+        <div class="neighborhood-desc">Healthcare hub &amp; embassies. Preferred by expats &amp; professionals.</div>
+        <div class="neighborhood-price">Avg. ₱7.1M · 62 listings</div>
+      </div>
+    </div>
+
+    <div class="neighborhood-card">
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=500&q=80" alt="Buhangin" />
+      <div class="neighborhood-overlay">
+        <div class="neighborhood-name">Buhangin</div>
+        <div class="neighborhood-desc">Near airport &amp; DEZA. Strong logistics &amp; industrial growth.</div>
+        <div class="neighborhood-price">Avg. ₱3.6M · 198 listings</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── WHY US ─────────────────────────────────── -->
+<section class="why-us">
+  <div class="section-header">
+    <div>
+      <div class="section-tag">Our Commitment</div>
+      <h2 class="section-title">Why Work With Us</h2>
+    </div>
+  </div>
+  <div class="why-us-grid">
+    <div class="why-item">
+      <div class="why-num">01</div>
+      <div class="why-title">Licensed &amp; PRC-Accredited Brokers</div>
+      <div class="why-desc">Every agent on our roster holds an active PRC license and undergoes regular PAREB-accredited training. You deal only with credentialed professionals.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-num">02</div>
+      <div class="why-title">Deep Davao Market Knowledge</div>
+      <div class="why-desc">Operating exclusively in Mindanao since 2009, we track zoning changes, infrastructure plans, and pricing trends before they reach public listings.</div>
+    </div>
+    <div class="why-item">
+      <div class="why-num">03</div>
+      <div class="why-title">Verified Listings, Clean Titles</div>
+      <div class="why-desc">Every property listed undergoes title verification, tax clearance review, and encumbrance checking before it appears on our platform.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIAL ────────────────────────────── -->
+<section class="testimonial">
+  <div>
+    <div class="testimonial-label">Client Testimonial</div>
+    <p class="testimonial-text">"We relocated from Manila and needed a trusted broker who actually knows Davao. Odin Estate found us a clean-titled property in Matina within three weeks — at asking price, no surprises."</p>
+    <div class="testimonial-author">
+      <div class="author-avatar">M</div>
+      <div>
+        <div class="author-name">Michael &amp; Sarah Lim</div>
+        <div class="author-detail">Matina, Davao City — Purchased 2025</div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-right">
+    <div class="rating-badge">
+      <div class="rating-num">4.9</div>
+      <div class="rating-stars">★★★★★</div>
+      <div class="rating-sub">from 214 client reviews</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ───────────────────────────────────── -->
+<section class="cta">
+  <div class="cta-left">
+    <div class="cta-tag">Book a Consultation</div>
+    <h2 class="cta-headline">Talk to a Property Specialist Today</h2>
+    <p class="cta-sub">Whether you're buying your first home, selling, or looking for an investment property — our brokers give you an honest assessment, no pressure.</p>
+  </div>
+  <div class="cta-right">
+    <button class="btn-cta">Get Consultation</button>
+    <button class="btn-cta-ghost">View All Listings</button>
+  </div>
+</section>
+
+<!-- ─── FOOTER ────────────────────────────────── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="nav-logo-text">Odin Estate Realty</span>
+      <p>Licensed real estate brokerage serving Davao City and Metro Davao since 2009. Trusted by over 2,000 clients across residential, commercial, and investment transactions.</p>
+      <div class="footer-contact-item"><strong>📞</strong> +63 82 123 4567</div>
+      <div class="footer-contact-item"><strong>✉</strong> hello@odinestate.com.ph</div>
+      <div class="footer-contact-item"><strong>📍</strong> JP Laurel Ave, Bajada, Davao City 8000</div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Buy Property</a></li>
+        <li><a href="#">Rent Property</a></li>
+        <li><a href="#">Sell Property</a></li>
+        <li><a href="#">Property Appraisal</a></li>
+        <li><a href="#">Investment Advisory</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Locations</h4>
+      <ul>
+        <li><a href="#">Lanang</a></li>
+        <li><a href="#">Matina</a></li>
+        <li><a href="#">Bajada</a></li>
+        <li><a href="#">Buhangin</a></li>
+        <li><a href="#">Calinan</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Agents</a></li>
+        <li><a href="#">Market Insights</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">PRC Verification</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Odin Estate Realty. All rights reserved. PRC Lic. No. 0023481.</span>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Filter buttons
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+</script>
 
 </body>
-
 </html>
