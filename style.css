@@ -64,32 +64,11 @@ nav {
   justify-content: center;
 }
 
-<<<<<<< HEAD
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-    padding-right: 10%;
-<<<<<<< HEAD
-    background-color: #1f2937;
-    position: sticky;
-    top: 0;
-=======
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    position: sticky;
-    top: 0;
-    z-index: 100;
->>>>>>> f99f92778d8ed5be071c9ca7459a378f834be643
-=======
 .logo-mark span {
   color: var(--accent);
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 18px;
   font-weight: 700;
->>>>>>> 04d35ceb76d29a4592e8c6dd343fb3d2e4f24183
 }
 
 .nav-logo-text {
